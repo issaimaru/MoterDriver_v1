@@ -2065,8 +2065,6 @@ https://docs.google.com/spreadsheets/d/1alXVjfJdgJkTSt8yICWPKED-AMP4SQioRdKHuPwM
 0.066[uF]近くにする→0.1[uF]に訂正</text>
 <text x="68.58" y="121.92" size="1.778" layer="95">パスコンくん</text>
 <text x="58.42" y="139.7" size="1.016" layer="95">プルアップ抵抗(RESETをGNDに接続するとRESET)</text>
-<text x="70.612" y="51.562" size="1.778" layer="95">FF1</text>
-<text x="179.07" y="50.292" size="1.778" layer="95">FF2</text>
 <text x="82.804" y="72.644" size="1.778" layer="95">V5</text>
 <text x="112.014" y="88.138" size="1.778" layer="95">V5</text>
 <text x="137.668" y="87.63" size="1.778" layer="95">V5</text>
@@ -2987,11 +2985,29 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <pinref part="IC1" gate="G$1" pin="FF2"/>
 <wire x1="101.6" y1="144.78" x2="96.52" y2="144.78" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="165.1" y1="50.8" x2="182.88" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="54.102" x2="165.1" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="50.8" x2="165.1" y2="50.8" width="0.1524" layer="91"/>
+<junction x="165.1" y="50.8"/>
+<pinref part="TR2" gate="G$1" pin="B"/>
+<pinref part="R6" gate="G$1" pin="P$2"/>
+<label x="182.88" y="50.8" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FF1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="FF1"/>
 <wire x1="101.6" y1="142.24" x2="96.52" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="50.8" x2="83.82" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="TR1" gate="G$1" pin="B"/>
+<wire x1="83.82" y1="50.8" x2="101.6" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="54.102" x2="83.82" y2="50.8" width="0.1524" layer="91"/>
+<junction x="83.82" y="50.8"/>
+<pinref part="R5" gate="G$1" pin="P$2"/>
+<label x="63.5" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -3015,26 +3031,6 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <junction x="139.7" y="119.38"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="C5" gate="G$1" pin="P$2"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<wire x1="68.58" y1="50.8" x2="83.82" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="TR1" gate="G$1" pin="B"/>
-<wire x1="83.82" y1="50.8" x2="101.6" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="54.102" x2="83.82" y2="50.8" width="0.1524" layer="91"/>
-<junction x="83.82" y="50.8"/>
-<pinref part="R5" gate="G$1" pin="P$2"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<wire x1="165.1" y1="50.8" x2="182.88" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="54.102" x2="165.1" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="50.8" x2="165.1" y2="50.8" width="0.1524" layer="91"/>
-<junction x="165.1" y="50.8"/>
-<pinref part="TR2" gate="G$1" pin="B"/>
-<pinref part="R6" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="GND_IN" class="0">
