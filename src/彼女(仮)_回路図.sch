@@ -2225,11 +2225,11 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <instance part="SUPPLY13" gate="GND" x="17.78" y="127" smashed="yes">
 <attribute name="VALUE" x="15.875" y="123.825" size="1.778" layer="96"/>
 </instance>
-<instance part="P+4" gate="VCC" x="38.1" y="223.52" smashed="yes">
-<attribute name="VALUE" x="40.64" y="220.98" size="1.778" layer="96" rot="R90"/>
+<instance part="P+4" gate="VCC" x="12.7" y="218.44" smashed="yes">
+<attribute name="VALUE" x="15.24" y="215.9" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY14" gate="GND" x="38.1" y="200.66" smashed="yes">
-<attribute name="VALUE" x="36.195" y="197.485" size="1.778" layer="96"/>
+<instance part="SUPPLY14" gate="GND" x="38.1" y="198.12" smashed="yes">
+<attribute name="VALUE" x="36.195" y="194.945" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY15" gate="GND" x="289.56" y="124.46" smashed="yes">
 <attribute name="VALUE" x="287.655" y="121.285" size="1.778" layer="96"/>
@@ -2434,43 +2434,41 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <pinref part="C12" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
-<pinref part="P+4" gate="VCC" pin="VCC"/>
-<wire x1="38.1" y1="218.44" x2="38.1" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="EDGE1" gate="G$1" pin="P18"/>
+<pinref part="EDGE1" gate="G$1" pin="P19"/>
+<wire x1="22.86" y1="200.66" x2="22.86" y2="203.2" width="0.1524" layer="91"/>
+<junction x="22.86" y="200.66"/>
+<wire x1="22.86" y1="198.12" x2="22.86" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="EDGE1" gate="G$1" pin="P20"/>
+<junction x="22.86" y="198.12"/>
+<wire x1="22.86" y1="195.58" x2="22.86" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="EDGE1" gate="G$1" pin="P21"/>
+<junction x="22.86" y="195.58"/>
+<wire x1="22.86" y1="193.04" x2="22.86" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="EDGE1" gate="G$1" pin="P22"/>
+<junction x="22.86" y="193.04"/>
+<pinref part="EDGE1" gate="G$1" pin="P23"/>
+<wire x1="22.86" y1="190.5" x2="22.86" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="EDGE1" gate="G$1" pin="P12"/>
-<pinref part="EDGE1" gate="G$1" pin="P17"/>
-<wire x1="22.86" y1="218.44" x2="22.86" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="203.2" x2="22.86" y2="205.74" width="0.1524" layer="91"/>
+<junction x="22.86" y="203.2"/>
 <pinref part="EDGE1" gate="G$1" pin="P13"/>
-<wire x1="22.86" y1="215.9" x2="22.86" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="205.74" x2="22.86" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="208.28" x2="22.86" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="210.82" x2="22.86" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="213.36" x2="22.86" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="215.9" x2="22.86" y2="218.44" width="0.1524" layer="91"/>
 <junction x="22.86" y="215.9"/>
 <pinref part="EDGE1" gate="G$1" pin="P14"/>
-<wire x1="22.86" y1="213.36" x2="22.86" y2="210.82" width="0.1524" layer="91"/>
 <junction x="22.86" y="213.36"/>
 <pinref part="EDGE1" gate="G$1" pin="P15"/>
-<wire x1="22.86" y1="210.82" x2="22.86" y2="208.28" width="0.1524" layer="91"/>
 <junction x="22.86" y="210.82"/>
 <pinref part="EDGE1" gate="G$1" pin="P16"/>
-<wire x1="22.86" y1="208.28" x2="22.86" y2="205.74" width="0.1524" layer="91"/>
 <junction x="22.86" y="208.28"/>
-<pinref part="EDGE1" gate="G$1" pin="P34"/>
-<wire x1="30.48" y1="205.74" x2="22.86" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="EDGE1" gate="G$1" pin="P17"/>
 <junction x="22.86" y="205.74"/>
-<pinref part="EDGE1" gate="G$1" pin="P39"/>
-<wire x1="30.48" y1="218.44" x2="30.48" y2="215.9" width="0.1524" layer="91"/>
-<junction x="30.48" y="205.74"/>
-<pinref part="EDGE1" gate="G$1" pin="P38"/>
-<wire x1="30.48" y1="215.9" x2="30.48" y2="213.36" width="0.1524" layer="91"/>
-<junction x="30.48" y="215.9"/>
-<pinref part="EDGE1" gate="G$1" pin="P37"/>
-<wire x1="30.48" y1="213.36" x2="30.48" y2="210.82" width="0.1524" layer="91"/>
-<junction x="30.48" y="213.36"/>
-<pinref part="EDGE1" gate="G$1" pin="P36"/>
-<wire x1="30.48" y1="210.82" x2="30.48" y2="208.28" width="0.1524" layer="91"/>
-<junction x="30.48" y="210.82"/>
-<pinref part="EDGE1" gate="G$1" pin="P35"/>
-<wire x1="30.48" y1="208.28" x2="30.48" y2="205.74" width="0.1524" layer="91"/>
-<junction x="30.48" y="208.28"/>
-<wire x1="38.1" y1="218.44" x2="30.48" y2="218.44" width="0.1524" layer="91"/>
-<junction x="30.48" y="218.44"/>
+<pinref part="P+4" gate="VCC" pin="VCC"/>
+<wire x1="12.7" y1="215.9" x2="22.86" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM" class="0">
@@ -2630,42 +2628,41 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <junction x="124.46" y="228.6"/>
 </segment>
 <segment>
+<pinref part="EDGE1" gate="G$1" pin="P34"/>
+<pinref part="EDGE1" gate="G$1" pin="P39"/>
+<wire x1="30.48" y1="218.44" x2="30.48" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="EDGE1" gate="G$1" pin="P38"/>
+<wire x1="30.48" y1="215.9" x2="30.48" y2="213.36" width="0.1524" layer="91"/>
+<junction x="30.48" y="215.9"/>
+<pinref part="EDGE1" gate="G$1" pin="P37"/>
+<wire x1="30.48" y1="213.36" x2="30.48" y2="210.82" width="0.1524" layer="91"/>
+<junction x="30.48" y="213.36"/>
+<pinref part="EDGE1" gate="G$1" pin="P36"/>
+<wire x1="30.48" y1="210.82" x2="30.48" y2="208.28" width="0.1524" layer="91"/>
+<junction x="30.48" y="210.82"/>
+<pinref part="EDGE1" gate="G$1" pin="P35"/>
+<wire x1="30.48" y1="208.28" x2="30.48" y2="205.74" width="0.1524" layer="91"/>
+<junction x="30.48" y="208.28"/>
 <pinref part="EDGE1" gate="G$1" pin="P28"/>
+<wire x1="30.48" y1="205.74" x2="30.48" y2="203.2" width="0.1524" layer="91"/>
+<junction x="30.48" y="205.74"/>
 <pinref part="EDGE1" gate="G$1" pin="P33"/>
-<wire x1="30.48" y1="190.5" x2="30.48" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="203.2" x2="30.48" y2="200.66" width="0.1524" layer="91"/>
+<junction x="30.48" y="203.2"/>
 <pinref part="EDGE1" gate="G$1" pin="P32"/>
-<wire x1="30.48" y1="193.04" x2="30.48" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="195.58" x2="30.48" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="198.12" x2="30.48" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="200.66" x2="30.48" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="200.66" x2="30.48" y2="198.12" width="0.1524" layer="91"/>
 <junction x="30.48" y="200.66"/>
 <pinref part="EDGE1" gate="G$1" pin="P31"/>
+<wire x1="30.48" y1="198.12" x2="30.48" y2="195.58" width="0.1524" layer="91"/>
 <junction x="30.48" y="198.12"/>
 <pinref part="EDGE1" gate="G$1" pin="P30"/>
+<wire x1="30.48" y1="195.58" x2="30.48" y2="193.04" width="0.1524" layer="91"/>
 <junction x="30.48" y="195.58"/>
 <pinref part="EDGE1" gate="G$1" pin="P29"/>
+<wire x1="30.48" y1="193.04" x2="30.48" y2="190.5" width="0.1524" layer="91"/>
 <junction x="30.48" y="193.04"/>
-<pinref part="EDGE1" gate="G$1" pin="P23"/>
-<wire x1="30.48" y1="190.5" x2="22.86" y2="190.5" width="0.1524" layer="91"/>
-<junction x="30.48" y="190.5"/>
-<pinref part="EDGE1" gate="G$1" pin="P18"/>
-<wire x1="22.86" y1="190.5" x2="22.86" y2="193.04" width="0.1524" layer="91"/>
-<junction x="22.86" y="190.5"/>
-<pinref part="EDGE1" gate="G$1" pin="P19"/>
-<wire x1="22.86" y1="193.04" x2="22.86" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="195.58" x2="22.86" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="198.12" x2="22.86" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="200.66" x2="22.86" y2="203.2" width="0.1524" layer="91"/>
-<junction x="22.86" y="200.66"/>
-<pinref part="EDGE1" gate="G$1" pin="P20"/>
-<junction x="22.86" y="198.12"/>
-<pinref part="EDGE1" gate="G$1" pin="P21"/>
-<junction x="22.86" y="195.58"/>
-<pinref part="EDGE1" gate="G$1" pin="P22"/>
-<junction x="22.86" y="193.04"/>
 <pinref part="SUPPLY14" gate="GND" pin="GND"/>
-<wire x1="30.48" y1="203.2" x2="38.1" y2="203.2" width="0.1524" layer="91"/>
-<junction x="30.48" y="203.2"/>
+<wire x1="38.1" y1="200.66" x2="30.48" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">
