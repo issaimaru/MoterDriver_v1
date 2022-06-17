@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "彼女(仮)_回路図")(type KiCad)(uri "$(KIPRJMOD)/彼女(仮)_回路図.pretty")(options "")(descr ""))
+)
