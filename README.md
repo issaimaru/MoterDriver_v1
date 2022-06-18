@@ -3,9 +3,9 @@
 ## 完成予想図<br>
 こんな感じ?<br>
 [表]<br>
-![image](https://user-images.githubusercontent.com/80198387/174333564-88a12d4e-b51d-40f8-baf5-9a6a21a3a56e.png)<br>
+![image](https://user-images.githubusercontent.com/80198387/174416205-f45eea0c-948c-4409-9b2c-baabddaefce2.png)<br>
 <br>
 [裏]<br>
-![image](https://user-images.githubusercontent.com/80198387/174333687-f4861837-ff87-4f63-8e9f-1f925b36c2a2.png)<br>
+![image](https://user-images.githubusercontent.com/80198387/174416237-65511293-ff5d-4773-ac20-9ca9e4b7da3c.png)<br>
 
 (2022-06-18_追記)GitHubのQRコードを基板に入れたかったのでKiCadに移行
