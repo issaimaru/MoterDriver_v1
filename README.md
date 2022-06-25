@@ -39,6 +39,12 @@
 |R14|RG2012N-222-W-T1|https://www.digikey.jp/en/products/detail/susumu/RG2012N-222-W-T1/600696|￥107.9(10個)|
 |総額|||￥2757.1
 
+<details><summary>回路図(Eagle)</summary>
+
+![image](https://user-images.githubusercontent.com/80198387/175751256-bec166d3-ec9e-4c23-944d-75b258ba501f.png)    
+    
+</details>
+
 ## 前モータードライバ(野獣)との違い
 - **PWM比1.0での動作が可能**<br>
 このモータードライバで使用しているA3921というゲートドライバは，ハイサイドにチャージポンプを内蔵している．そのため，PWM比が1.0の近くであっても正常に動作することができる．<br>
