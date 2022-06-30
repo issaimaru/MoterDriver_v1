@@ -1,11 +1,15 @@
 # DriveUnit Bseries(ver 1.0)
-**[自作電源基板](https://github.com/Issaimaru/PowerSupply_v1)に刺して使う80A級モータードライバ**<br>**制作期間:2022/01/18頃～**<br>**名前:DriveUnit Bseries(ver 1.0)**<br> 
+**[自作電源基板](https://github.com/Issaimaru/PowerSupply_v1)に刺して使う80A級モータードライバ**<br>
+**[DUB with 遠野](https://drive.google.com/drive/folders/1u7Ik0gOYJtKrlYP1_BmAKqJJ8EFHsmdj)を使って遠野に刺すことも可能**<br>
+**制作期間:2022/01/18頃～**<br>**名前:DriveUnit Bseries(ver 1.0)**<br>
 ## 基板外形図<br>
 **表**<br>
 ![image](https://user-images.githubusercontent.com/80198387/175350455-460e55ba-bd87-4215-8daa-f619b9828c08.png)<br>
 <br>
 **裏**<br>
 ![image](https://user-images.githubusercontent.com/80198387/175350337-08d69d85-ec84-4461-9aae-7be635f8783b.png)<br>
+
+基板サイズ:*65.68[mm]×51[mm]*
 
 ## 使用電子部品，値段
 チップ抵抗等大量に使用する部品の場合は1個あたりの値段を算出し，値段の横に個数を括弧で示す．<br>
@@ -65,6 +69,10 @@ MD10Cのように，ボタンでモータの正転，逆転を制御できるよ
 
 - **定格電流が大きくなった**<br>
 DUBでは(これも実験で確かめるが)最大で80$A$の電流を流すことができる．しかし，ハピロボ以降のロボコンは30$A$以下という電流制限があるため，電源基板側にリセッタブルヒューズがついている．そのためあまり意味はない．<br>
+
+- **逆接しにくくなった**<br>
+エッジコネクタは物理的に逆接が不可能な状態になっていないが，野獣は勿論のことこのモータードライバも逆接すると燃える．<br>
+そのため，このモータードライバと電源基板では三角の印をつけることで接続する向きが把握しやすいようにした．<br>
 
 ## 回路図のダウンロード(クローン)方法
 1. Gitをインストールする．<br>Gitのインストール方法は[ここ](https://www.sejuku.net/blog/73444)を参照．
