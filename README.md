@@ -1,6 +1,6 @@
 # DriveUnit Bseries(ver 1.0)
 **[自作電源基板](https://github.com/Issaimaru/PowerSupply_v1)に刺して使う80A級モータードライバ**<br>
-**[DUB with 遠野](https://drive.google.com/drive/folders/1u7Ik0gOYJtKrlYP1_BmAKqJJ8EFHsmdj)を使って遠野に刺すことも可能**<br>
+**[DUB with 遠野](https://github.com/Issaimaru/DUB_with_Tono)を使って遠野に刺すことも可能**<br>
 **制作期間:2022/01/18頃～**<br>**名前:DriveUnit Bseries(ver 1.0)**<br>
 ## 基板外形図<br>
 **表**<br>
