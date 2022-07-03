@@ -1962,7 +1962,7 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="26"/>
 <contactref element="TR2" pad="B"/>
 <contactref element="R6" pad="RIGHT"/>
-<wire x1="54.25" y1="38.25" x2="54.25" y2="35.64" width="0.1524" layer="1"/>
+<wire x1="54.25" y1="38.25" x2="54.25" y2="35.64" width="0.254" layer="1"/>
 <wire x1="54.25" y1="35.64" x2="54.29" y2="35.6" width="0.1524" layer="1"/>
 <wire x1="54.25" y1="38.25" x2="54.25" y2="38.49" width="0.254" layer="1"/>
 <wire x1="54.25" y1="38.49" x2="50.3532" y2="42.3868" width="0.254" layer="1"/>
