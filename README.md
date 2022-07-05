@@ -4,10 +4,10 @@
 **制作期間:2022/01/18頃～**<br>**名前:DriveUnit Bseries(ver 1.0)**<br>
 ## 基板外形図<br>
 **表**<br>
-![image](https://user-images.githubusercontent.com/80198387/177004823-8032ac92-82c9-45ef-b447-ad87cae1842d.png)<br>
+![image](https://user-images.githubusercontent.com/80198387/177430643-1f042ee9-5ea2-4627-b6e7-e683009f7b1e.png)<br>
 <br>
 **裏**<br>
-![image](https://user-images.githubusercontent.com/80198387/177004832-24174d6f-c998-40f5-97b4-56377931413e.png)<br>
+![image](https://user-images.githubusercontent.com/80198387/177430703-802aced8-9470-4e91-a96c-10a5cb01d991.png)<br>
 
 基板サイズ:*65.68[mm]×51[mm]*
 
