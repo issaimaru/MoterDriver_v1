@@ -20,9 +20,50 @@
 - LAP/SM切り替えスイッチ
 ![image](https://user-images.githubusercontent.com/80198387/178092940-8fb36315-81cc-43eb-a8e8-c8441fdcd832.png)
 このスイッチは名前の通り，LAP方式とSM方式を切り替えることできるスイッチです．<br>
-LAP方式とSM方式の違いは[このページ](https://note.suzakugiken.jp/motordriver-sm-and-lap-tutorial-a/)を参照してください．<br>
-安全性や効率の観点から
+基板にあるシルクの通り，スライドスイッチを"SM"の文字の方にスライドするとSM方式，"LAP"の文字の方にスライドするとLAP方式となります．<br>
+SM方式を採用する場合にはPWMピンにはPWM信号を流し，DIRピンには回転方向の信号を流してください(下の表参照)<br>
+LAP方式を採用する場合はPWMピンには何も繋げずに**DIRピンに**PWM信号を流してください．<br>
+LAP/SM方式の場合の各ピンの真理値表は以下のようになっています．<br>
     
+    |PWM|DIR|出力(SM)|
+    |:---:|:---:|:---:|
+    |1~100%|0|正回転|
+    |1~100%|1|負回転|
+    |0%|$\phi$|ブレーキ|
+
+    |DIR|出力(LAP)|
+    |:---:|:---:|
+    |0~49%|正回転|
+    |50%|無回転|
+    |51~100%|負回転|
+    
+    ※LAP方式についてはMD10C等一般的なモータードライバと正転・逆転が逆だと思うので注意してください．<br><br>
+    LAP方式とSM方式の違いは[このページ](https://note.suzakugiken.jp/motordriver-sm-and-lap-tutorial-a/)を参照してください．<br> 
+    安全性や効率の観点から基本的にはSM方式を採用してください．
+    
+- 手動・テストボタン
+    ![image](https://user-images.githubusercontent.com/80198387/178093436-772c6a50-b641-4d57-8cd7-2d6d2c4e6749.png)
+    
+    このボタンを押すことで手動でモーターを動かすことができます．<br>モータが駆動しないとき，このモータードライバの問題かその他の問題かを判別したり，機構がちゃんと動くかのテスト等に活用してください．
+    SAボタンを押すと正回転，SBボタンを押すと負回転になります．
+    
+- ファルトフラグ，RESETボタン
+    
+    ![image](https://user-images.githubusercontent.com/80198387/178094577-9a4c742c-3c82-49d1-ab6b-630c1d87ff60.png)<br>
+    ![image](https://user-images.githubusercontent.com/80198387/178094596-dddb6ece-b245-49a3-9a2e-d4b836d327e5.png)
+
+
+    このLEDが光っているということはなにかこのモータードライバに不具合があるということです．<br>
+    なんの不具合があるかは下の表を参考にしてください．<br>
+    ![image](https://user-images.githubusercontent.com/80198387/178094685-a0b9effb-837c-4c6a-9758-a55f66cc4fcf.png)
+    
+    また，この表だけじゃ情報不足でわからないと思います．<br>全部英語ですがA3921のデータシートのp12~p13に乗っています．A3921のデータシートは[公式サイト](https://www.allegromicro.com/ja-jp/products/motor-drivers/brush-dc-motor-drivers/a3921/)からダウンロードしてください．<br>
+    <br>
+    リセットボタンを押すとA3921がスリープモードに入り，動作しなくなります．<br>
+    スリープモードに入ることで，A3921が検知していた異常が全てリセットされます．<br>
+    スリープモードに入らずにA3921が検知している異常をリセットするためにはA3921のデータシートのtRESよりも短い時間だけリセットボタンを押す必要がありますがtRESの単位は$\mu s$なので人間業じゃないです....
+-
+
     
 </details>
 
