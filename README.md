@@ -104,9 +104,11 @@ LAP/SM方式の場合の各ピンの真理値表は以下のようになって�
     >使用モータ:RS-555VC-5524<br>
     >使用マイコン:NUCLEO-F401RE<br>
     >印加電圧:12V<br>
+    >PWM方式:Sign Magnitude(SM)<br>
+    >PWM周波数:10kHz
 
     上記のものを使用してこの特性の調査を行いました．<br>
-    また，調査の流れとしてはマイコンとこのモータードライバを使って一定のペース(これをx[$ms$]とします)で加速→定格(12V)で運転→急減速の流れでモータを運転し，急減速の際の電源ラインの波形を読み取る，といった感じです．<br>
+    また，調査の流れとしてはマイコンとこのモータードライバを使って一定のペース(これをx[$ ms$]とします)で加速→定格(12V)で運転→急減速の流れでモータを運転し，急減速の際の電源ラインの波形を読み取る，といった感じです．<br>
 
     - x=100の時の波形<br>
         ![x=100](https://user-images.githubusercontent.com/80198387/182985812-a9463f45-5fb8-4090-b836-3d4c6afe0bb1.jpg)<br>
@@ -134,10 +136,45 @@ LAP/SM方式の場合の各ピンの真理値表は以下のようになって�
         ![x=0](https://user-images.githubusercontent.com/80198387/182991616-8460b92d-82c3-4d67-badc-56032ba1fc27.jpg)<br>
         逆起電力が見られなくなりました．
 
+    ちなみに野獣でも同じ条件でこの実験をすると，最大の電源ラインの電圧はほぼ変わりませんでしたが，野獣は耐圧がこのモータードライバよりも低いため逆起電力で壊れる可能性があります．(実際に実験の最中に壊れました...)<br>
+    なので，急停止するような動作が必要な場合には12[$ V$]でもこのモータードライバを使用することを推奨します．<br>
+
+- 周波数-回転数特性
+    >使用モータ:RS-555VC-5524<br>
+    >使用マイコン:NUCLEO-F401RE<br>
+    >印加電圧:12V<br>
+    >PWM方式:Sign Magnitude(SM)<br>
+
+    上記のものを使用してこの特性の調査を行いました．<br>
+    また，調査の流れとしては特定のPWM周波数(これをfとします．)で0[$ V$]から100[$ ms$]で定格(12V)になるようにPWM信号をこのモータードライバに送り，Tera Termから値を読み取ってそれを折れ線グラフにします．
+
+    - f=100[Hz]<br>
+        ![100Hz](https://user-images.githubusercontent.com/80198387/183015856-b49de5df-3fe8-461b-b0b6-005182c515f9.png)
+
+
+    - f=200[Hz]<br>
+        ![200Hz](https://user-images.githubusercontent.com/80198387/183017351-410e9dfd-2a8d-40ed-8729-a6359d71f16f.png)<br>
+        正直ここらへんはかなり動作が不安定です(さらに電流が大きい)．なのでなにか事情がある時以外は使わないでください．
+
+    - f=500[Hz]<br>
+        ![500Hz](https://user-images.githubusercontent.com/80198387/183018047-8e0e341d-5f22-473a-aee5-9443c281b192.png)<br>
     
+    - f=1[kHz]
+        ![1kHz](https://user-images.githubusercontent.com/80198387/183018703-a1da7691-d5ac-47e9-ac12-8bca5668bbee.png)
 
+    - f=2[kHz]
+        ![2kHz](https://user-images.githubusercontent.com/80198387/183019331-52d16209-3b90-4f01-9699-f73423b2485b.png)
+    
+    - f=5[kHz]
+        ![5kHz](https://user-images.githubusercontent.com/80198387/183019896-c67b87ab-f310-4848-8d25-d8ded898bdcd.png)
 
+    - f=10[kHz]
+        ![10kHz](https://user-images.githubusercontent.com/80198387/183020528-8bf842f3-010b-42ad-a658-89fb67f51017.png)
 
+    - f=20[kHz]
+        ![20kHz](https://user-images.githubusercontent.com/80198387/183024985-b2952b28-0521-47bb-b1f0-a45815b4290f.png)<br>
+
+        これ以上はHALドライバーを使わないとPWM分解能がかなり落ちるので計測してないです．
 
 <!--</details>-->
 
