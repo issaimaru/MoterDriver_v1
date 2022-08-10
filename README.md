@@ -2,7 +2,11 @@
 **[自作電源基板](https://github.com/Issaimaru/PowerSupply_v1)に刺して使う80A級モータードライバ**<br>
 **[DUB with 遠野](https://github.com/Issaimaru/DUB_with_Tono)を使って遠野に刺すこともできます**<br>
 **動作電圧 8[V]~30[V]**<br>
-**制作期間:2022/01/18頃～**<br>**名前:DriveUnit Bseries(ver 1.0)**<br>
+**PWM周波数 ~250kHz**<br>
+**duty比 100%対応**<br>
+**電圧監視機能搭載**<br>
+**制作期間:2022/01/18頃～**<br>
+**名前:DriveUnit Bseries(ver 1.0)**<br>
 ## 基板外形図<br>
 **表**<br>
 ![DriveUnit_B-series(ver1 0)](https://user-images.githubusercontent.com/80198387/183240083-dd1afdff-b96e-46e0-af43-96bf9f36109b.png)<br>
@@ -286,6 +290,8 @@ LAP/SM方式の場合の各ピンの真理値表は以下のようになって�
 </details>
 
 ## 前モータードライバ(野獣)との違い
+野獣がノートパソコンで，DUBがゲーミングパソコンと例えるとわかりやすいと思います．<br>
+野獣ができることは基本的にDUBでもできますし，野獣でできないような機能もDUBにはありますが，値段とサイズ的にはDUBが劣ります．<br>
 - **PWM比1.0での動作が可能**<br>
 このモータードライバで使用しているA3921というゲートドライバは，ハイサイドにチャージポンプを内蔵しています．そのため，PWM比が1.0の近くであっても正常に動作することができます．<br>
 
