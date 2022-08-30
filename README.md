@@ -233,7 +233,7 @@ LAP/SM方式の場合の各ピンの真理値表は以下のようになって�
     
     ただ，以下のように回路を組めばこのガバをなくすことができます．<br>
     
-    <details><summary>リセット時に暴走するガバのみ修正する回路</summary>
+    <details><summary>リセット時に暴走するガバを修正する回路</summary>
     
     ![image](https://user-images.githubusercontent.com/80198387/185751849-dc6df99f-e931-42ac-a87c-b51a25e62439.png)
 
