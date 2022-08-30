@@ -16,6 +16,9 @@
 
 基板サイズ:*65.68[mm]×51[mm]*
 
+## バージョンに対応するドキュメント
+- ver1.0-->[README_v1.md](https://github.com/Issaimaru/MoterDriver_v1/blob/master/README_v1.md)
+
 ## 使い方
 野獣にはない機能があるので使用者は必ず確認してください．
 長くなるため折りたたみます．
