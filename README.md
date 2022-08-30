@@ -238,13 +238,6 @@ LAP/SM方式の場合の各ピンの真理値表は以下のようになって�
     ![image](https://user-images.githubusercontent.com/80198387/185751849-dc6df99f-e931-42ac-a87c-b51a25e62439.png)
 
     </details>
-    
-    <details><summary>ボタンスイッチを使えるようにする機能を追加した回路</summary>
-    
-    ![image](https://user-images.githubusercontent.com/80198387/185751949-a2317ab5-5bac-442c-9c05-adb2e8773628.png)<br>
-        この場合，JP1を短絡させるとボタンスイッチを使えるようになるデバックモードに移行します．
-      
-     </details>
 
     ちなみに，このガバは出力がNOTではないフォトカプラを選べばいいのですが，高速なフォトカプラは自分が探した限り全て出力がNOTで，これを低速なものに変えると前モータードライバと同じくらいの周波数までしか対応できなくなることが予想されます．
 
