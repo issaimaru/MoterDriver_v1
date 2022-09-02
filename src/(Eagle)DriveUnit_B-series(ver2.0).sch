@@ -1894,6 +1894,79 @@ In this library the device names are the same as the pin names of the symbols, t
 </deviceset>
 </devicesets>
 </library>
+<library name="GF063P B104K">
+<packages>
+<package name="GF063PB104K">
+<wire x1="0.18284375" y1="0" x2="1.27" y2="0" width="0.1" layer="21"/>
+<wire x1="1.27" y1="0" x2="5.842" y2="0" width="0.1" layer="21"/>
+<wire x1="5.842" y1="0" x2="6.9" y2="0" width="0.1" layer="21"/>
+<wire x1="6.9" y1="0" x2="7.1" y2="0.2" width="0.1" layer="21" curve="90"/>
+<wire x1="7.1" y1="0.2" x2="7.1" y2="7" width="0.1" layer="21"/>
+<wire x1="0.18284375" y1="0" x2="0.041421875" y2="0.058578125" width="0.1" layer="21" curve="-45"/>
+<wire x1="0.041421875" y1="0.058578125" x2="0" y2="0.158578125" width="0.1" layer="21" curve="-45"/>
+<wire x1="7.1" y1="7" x2="6.9" y2="7.2" width="0.1" layer="21" curve="90"/>
+<wire x1="6.9" y1="7.2" x2="0.2" y2="7.2" width="0.1" layer="21"/>
+<wire x1="0.2" y1="7.2" x2="0" y2="7" width="0.1" layer="21" curve="90"/>
+<circle x="3.55" y="3.8" radius="2" width="0.1" layer="21"/>
+<circle x="3.55" y="3.8" radius="1.8" width="0.1" layer="21"/>
+<wire x1="0" y1="7" x2="0" y2="1.27" width="0.1" layer="21"/>
+<wire x1="0" y1="1.27" x2="0" y2="0.158578125" width="0.1" layer="21"/>
+<wire x1="1.27" y1="0" x2="0" y2="1.27" width="0.1" layer="21"/>
+<wire x1="7.112" y1="1.27" x2="5.842" y2="0" width="0.1" layer="21"/>
+<wire x1="0" y1="1.27" x2="7.112" y2="1.27" width="0.1" layer="21"/>
+<text x="1.524" y="0.254" size="0.8" layer="21" distance="23">TOCOS</text>
+<rectangle x1="0.9" y1="2.15" x2="1.57" y2="2.49" layer="21" rot="R35"/>
+<rectangle x1="0.7" y1="3.1" x2="1.2" y2="3.4" layer="21" rot="R15"/>
+<rectangle x1="1.2" y1="5.32" x2="1.7" y2="5.62" layer="21" rot="R320"/>
+<rectangle x1="0.69" y1="4.34" x2="1.19" y2="4.64" layer="21" rot="R345"/>
+<rectangle x1="2.1" y1="6.07" x2="2.6" y2="6.37" layer="21" rot="R305"/>
+<rectangle x1="3.25" y1="6.32" x2="3.75" y2="6.62" layer="21" rot="R90"/>
+<wire x1="5.8" y1="7.17" x2="7.07" y2="5.9" width="0.1" layer="21"/>
+<wire x1="1.312" y1="7.15" x2="0.042" y2="5.88" width="0.1" layer="21"/>
+<rectangle x1="5.53" y1="2.15" x2="6.2" y2="2.49" layer="21" rot="R325"/>
+<rectangle x1="5.93" y1="3.1" x2="6.43" y2="3.4" layer="21" rot="R345"/>
+<rectangle x1="5.92" y1="4.34" x2="6.42" y2="4.64" layer="21" rot="R15"/>
+<rectangle x1="5.46" y1="5.32" x2="5.96" y2="5.62" layer="21" rot="R40"/>
+<rectangle x1="4.54" y1="6.07" x2="5.04" y2="6.37" layer="21" rot="R55"/>
+<pad name="RIGHT" x="6.05" y="2.8" drill="1.1" shape="octagon"/>
+<pad name="CENTER" x="3.55" y="5.3" drill="1.1" shape="octagon"/>
+<pad name="LEFT" x="1.05" y="2.8" drill="1.1" shape="octagon"/>
+</package>
+</packages>
+<symbols>
+<symbol name="R-EU">
+<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-0.889" x2="2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<text x="-2.032" y="1.2446" size="0.762" layer="95">&gt;NAME</text>
+<text x="-2.032" y="-2.032" size="0.762" layer="96">&gt;VALUE</text>
+<pin name="RIGHT" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="LEFT" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<wire x1="-2.286" y1="-2.286" x2="2.794" y2="2.794" width="0.254" layer="94"/>
+<wire x1="2.794" y1="2.794" x2="1.524" y2="2.286" width="0.254" layer="94"/>
+<wire x1="2.794" y1="2.794" x2="2.286" y2="1.524" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GF063PB104K" prefix="R" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="R-EU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GF063PB104K">
+<connects>
+<connect gate="G$1" pin="LEFT" pad="LEFT"/>
+<connect gate="G$1" pin="RIGHT" pad="CENTER RIGHT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1999,6 +2072,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R26" library="RG2012N-201-W-T1" deviceset="RG2012N-201-W-T1" device=""/>
 <part name="R27" library="RG2012N-201-W-T1" deviceset="RG2012N-201-W-T1" device=""/>
 <part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY21" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="R28" library="GF063P B104K" deviceset="GF063PB104K" device="" value="100k"/>
 </parts>
 <sheets>
 <sheet>
@@ -2024,18 +2100,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="58.42" y="116.84" size="1.016" layer="95">プルアップ抵抗(RESETをGNDに接続するとRESET)</text>
 <text x="114.554" y="65.278" size="1.778" layer="95">V5</text>
 <text x="140.208" y="64.77" size="1.778" layer="95">V5</text>
-<text x="66.04" y="33.02" size="1.778" layer="95">”オープンドレイン”</text>
-<text x="170.18" y="33.02" size="1.778" layer="95">”オープンドレイン”</text>
 <text x="73.66" y="220.98" size="1.778" layer="95">正転</text>
-<text x="22.86" y="121.92" size="1.778" layer="95">リセットボタン</text>
-<text x="12.7" y="162.56" size="1.778" layer="95">短絡させるとLAP方式になるよ！！</text>
 <text x="177.546" y="115.57" size="1.016" layer="95">充電時間
 MD動作中→0.46[us] 訂正後 0.6[us]
 電源投入時→9.1[us] 訂正後 12[us]</text>
-<text x="106.68" y="154.94" size="1.778" layer="95">Qg=45.6[nC](Vgs=12[V])[有効数字考慮46]</text>
 <text x="93.98" y="132.08" size="1.778" layer="95">0.180[us]</text>
-<text x="73.66" y="157.48" size="1.778" layer="95">別に適当でよさそう</text>
-<text x="116.84" y="55.88" size="1.016" layer="95">←LEDが壊れないくらいの抵抗値→</text>
 <text x="269.24" y="170.942" size="1.778" layer="91">+put</text>
 <text x="307.34" y="170.942" size="1.778" layer="91">-put</text>
 <text x="34.544" y="247.142" size="1.778" layer="91">+put</text>
@@ -2073,10 +2142,10 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <wire x1="7.62" y1="175.26" x2="45.72" y2="175.26" width="0.1524" layer="97"/>
 <wire x1="45.72" y1="175.26" x2="45.72" y2="254" width="0.1524" layer="97"/>
 <wire x1="45.72" y1="254" x2="7.62" y2="254" width="0.1524" layer="97"/>
-<wire x1="10.16" y1="167.64" x2="10.16" y2="147.32" width="0.1524" layer="97"/>
-<wire x1="10.16" y1="147.32" x2="48.26" y2="147.32" width="0.1524" layer="97"/>
-<wire x1="48.26" y1="147.32" x2="48.26" y2="167.64" width="0.1524" layer="97"/>
-<wire x1="48.26" y1="167.64" x2="10.16" y2="167.64" width="0.1524" layer="97"/>
+<wire x1="10.16" y1="165.1" x2="10.16" y2="147.32" width="0.1524" layer="97"/>
+<wire x1="10.16" y1="147.32" x2="45.72" y2="147.32" width="0.1524" layer="97"/>
+<wire x1="45.72" y1="147.32" x2="45.72" y2="165.1" width="0.1524" layer="97"/>
+<wire x1="45.72" y1="165.1" x2="10.16" y2="165.1" width="0.1524" layer="97"/>
 <wire x1="10.16" y1="139.7" x2="10.16" y2="121.92" width="0.1524" layer="97"/>
 <wire x1="10.16" y1="121.92" x2="45.72" y2="121.92" width="0.1524" layer="97"/>
 <wire x1="45.72" y1="121.92" x2="45.72" y2="139.7" width="0.1524" layer="97"/>
@@ -2089,7 +2158,6 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <text x="22.86" y="119.38" size="1.778" layer="97">Reset</text>
 <text x="70.358" y="122.682" size="0.762" layer="97" rot="R90">プルアップ抵抗は適当</text>
 <wire x1="63.5" y1="7.62" x2="190.5" y2="7.62" width="0.1524" layer="97"/>
-<text x="10.16" y="114.3" size="1.778" layer="97">部品選定完了☑</text>
 <text x="170.18" y="220.98" size="1.778" layer="95">逆転</text>
 </plain>
 <instances>
@@ -2116,8 +2184,8 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <instance part="SUPPLY1" gate="GND" x="88.9" y="93.98" smashed="yes">
 <attribute name="VALUE" x="86.995" y="90.805" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY2" gate="GND" x="87.122" y="121.92" smashed="yes">
-<attribute name="VALUE" x="85.725" y="119.507" size="1.016" layer="96"/>
+<instance part="SUPPLY2" gate="GND" x="78.74" y="120.142" smashed="yes">
+<attribute name="VALUE" x="77.343" y="117.729" size="1.016" layer="96"/>
 </instance>
 <instance part="SUPPLY3" gate="GND" x="91.44" y="129.54" smashed="yes">
 <attribute name="VALUE" x="89.535" y="126.365" size="1.778" layer="96"/>
@@ -2224,22 +2292,18 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <instance part="R14" gate="G$1" x="91.44" y="154.94" smashed="yes" rot="R90"/>
 <instance part="LED4" gate="G$1" x="114.3" y="45.72" smashed="yes">
 <attribute name="NAME" x="117.856" y="41.148" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="120.015" y="41.148" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="LED5" gate="G$1" x="139.7" y="45.72" smashed="yes">
 <attribute name="NAME" x="143.256" y="41.148" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="145.415" y="41.148" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="D1" gate="G$1" x="147.32" y="96.52" smashed="yes" rot="R180">
 <attribute name="NAME" x="144.78" y="95.885" size="0.762" layer="95" rot="R180"/>
 </instance>
 <instance part="SW3" gate="G$1" x="27.94" y="134.62" smashed="yes" rot="R270">
 <attribute name="NAME" x="19.558" y="136.652" size="1.778" layer="95"/>
-<attribute name="VALUE" x="31.115" y="136.906" size="1.778" layer="96"/>
 </instance>
 <instance part="SW4" gate="G$1" x="25.4" y="157.48" smashed="yes" rot="R270">
 <attribute name="NAME" x="22.86" y="152.4" size="1.778" layer="95"/>
-<attribute name="VALUE" x="22.86" y="149.86" size="1.778" layer="96"/>
 </instance>
 <instance part="TLP1" gate="G$1" x="101.6" y="236.22" smashed="yes" rot="R270">
 <attribute name="NAME" x="106.045" y="240.03" size="0.8128" layer="95" rot="R270"/>
@@ -2275,10 +2339,10 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <attribute name="NAME" x="96.52" y="92.964" size="1.778" layer="95" rot="R270"/>
 </instance>
 <instance part="C13" gate="G$1" x="332.74" y="68.58" smashed="yes">
-<attribute name="NAME" x="333.756" y="68.58" size="1.778" layer="95"/>
+<attribute name="NAME" x="330.454" y="65.532" size="0.762" layer="95"/>
 </instance>
 <instance part="C12" gate="G$1" x="325.12" y="68.58" smashed="yes">
-<attribute name="NAME" x="326.136" y="68.58" size="1.778" layer="95"/>
+<attribute name="NAME" x="322.58" y="65.532" size="0.762" layer="95"/>
 </instance>
 <instance part="EDGE1" gate="G$1" x="25.4" y="215.9" smashed="yes">
 <attribute name="NAME" x="19.05" y="249.555" size="1.778" layer="95"/>
@@ -2286,15 +2350,12 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 </instance>
 <instance part="LED1" gate="G$1" x="259.08" y="60.96" smashed="yes">
 <attribute name="NAME" x="255.016" y="56.388" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="272.415" y="46.228" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="LED2" gate="G$1" x="266.7" y="58.42" smashed="yes" rot="R180">
 <attribute name="NAME" x="263.144" y="62.992" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="260.985" y="65.532" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="LED3" gate="G$1" x="302.26" y="60.96" smashed="yes">
 <attribute name="NAME" x="298.196" y="56.388" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="315.595" y="46.228" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="IC1" gate="G$1" x="119.38" y="109.22" smashed="yes" rot="MR0">
 <attribute name="NAME" x="129.54" y="130.302" size="1.778" layer="95" rot="MR0"/>
@@ -2307,10 +2368,10 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <attribute name="NAME" x="167.386" y="42.164" size="0.762" layer="95" rot="R90"/>
 </instance>
 <instance part="C10" gate="G$1" x="309.88" y="68.58" smashed="yes">
-<attribute name="NAME" x="305.562" y="65.532" size="0.762" layer="95"/>
+<attribute name="NAME" x="306.324" y="65.532" size="0.762" layer="95"/>
 </instance>
 <instance part="C11" gate="G$1" x="317.5" y="68.58" smashed="yes">
-<attribute name="NAME" x="313.182" y="65.532" size="0.762" layer="95"/>
+<attribute name="NAME" x="314.198" y="65.532" size="0.762" layer="95"/>
 </instance>
 <instance part="TR3" gate="G$1" x="129.54" y="195.58" smashed="yes" rot="R270">
 <attribute name="NAME" x="132.08" y="200.66" size="1.778" layer="95"/>
@@ -2356,8 +2417,18 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 </instance>
 <instance part="R26" gate="G$1" x="109.22" y="241.3" smashed="yes" rot="R90"/>
 <instance part="R27" gate="G$1" x="137.16" y="241.3" smashed="yes" rot="R90"/>
-<instance part="SUPPLY19" gate="GND" x="43.18" y="152.4" smashed="yes">
-<attribute name="VALUE" x="41.275" y="149.225" size="1.778" layer="96"/>
+<instance part="SUPPLY19" gate="GND" x="40.64" y="152.4" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="42.545" y="149.225" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="SUPPLY20" gate="GND" x="60.96" y="208.28" smashed="yes">
+<attribute name="VALUE" x="59.055" y="205.105" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY21" gate="GND" x="187.96" y="208.28" smashed="yes">
+<attribute name="VALUE" x="186.055" y="205.105" size="1.778" layer="96"/>
+</instance>
+<instance part="R28" gate="G$1" x="83.82" y="124.46" smashed="yes">
+<attribute name="NAME" x="81.788" y="125.7046" size="0.762" layer="95"/>
+<attribute name="VALUE" x="82.804" y="122.428" size="0.762" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -2497,11 +2568,6 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <pinref part="IC1" gate="G$1" pin="GND"/>
 <wire x1="101.6" y1="99.06" x2="88.9" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="99.06" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY2" gate="GND" pin="GND"/>
-<wire x1="89.662" y1="124.46" x2="87.122" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="R13" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
@@ -2645,18 +2711,6 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <wire x1="139.7" y1="124.46" x2="134.62" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SW2" gate="G$1" pin="S"/>
-<wire x1="177.8" y1="213.36" x2="187.96" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="213.36" x2="187.96" y2="210.82" width="0.1524" layer="91"/>
-<label x="185.42" y="208.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SW1" gate="G$1" pin="P"/>
-<wire x1="71.12" y1="213.36" x2="60.96" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="213.36" x2="60.96" y2="210.82" width="0.1524" layer="91"/>
-<label x="58.42" y="208.28" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="TR3" gate="G$1" pin="E"/>
 <wire x1="119.38" y1="193.04" x2="115.824" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
@@ -2675,7 +2729,24 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <segment>
 <pinref part="SW4" gate="G$1" pin="R"/>
 <pinref part="SUPPLY19" gate="GND" pin="GND"/>
-<wire x1="30.48" y1="154.94" x2="43.18" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="154.94" x2="40.64" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SW2" gate="G$1" pin="S"/>
+<pinref part="SUPPLY21" gate="GND" pin="GND"/>
+<wire x1="177.8" y1="213.36" x2="187.96" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="213.36" x2="187.96" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SW1" gate="G$1" pin="P"/>
+<pinref part="SUPPLY20" gate="GND" pin="GND"/>
+<wire x1="71.12" y1="213.36" x2="60.96" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="213.36" x2="60.96" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R28" gate="G$1" pin="LEFT"/>
+<pinref part="SUPPLY2" gate="GND" pin="GND"/>
+<wire x1="78.74" y1="124.46" x2="78.74" y2="122.682" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -2691,7 +2762,7 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 </segment>
 <segment>
 <wire x1="33.02" y1="134.62" x2="38.1" y2="134.62" width="0.1524" layer="91"/>
-<label x="35.56" y="134.62" size="1.778" layer="95"/>
+<label x="33.02" y="134.874" size="1.778" layer="95"/>
 <pinref part="SW3" gate="G$1" pin="3"/>
 </segment>
 </net>
@@ -2730,14 +2801,14 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <pinref part="R8" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
-<wire x1="81.28" y1="109.22" x2="81.28" y2="111.76" width="0.1524" layer="91"/>
-<label x="80.264" y="132.588" size="1.778" layer="95"/>
+<wire x1="76.2" y1="109.22" x2="76.2" y2="111.76" width="0.1524" layer="91"/>
+<label x="75.184" y="132.588" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="SR"/>
-<wire x1="81.28" y1="111.76" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="109.22" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="111.76" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="109.22" x2="76.2" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="PWML"/>
-<wire x1="101.6" y1="111.76" x2="81.28" y2="111.76" width="0.1524" layer="91"/>
-<junction x="81.28" y="111.76"/>
+<wire x1="101.6" y1="111.76" x2="76.2" y2="111.76" width="0.1524" layer="91"/>
+<junction x="76.2" y="111.76"/>
 </segment>
 <segment>
 <label x="106.68" y="226.06" size="1.778" layer="95"/>
@@ -3181,13 +3252,6 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <wire x1="101.6" y1="93.98" x2="99.06" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="RDEAD"/>
-<pinref part="R13" gate="G$1" pin="P$1"/>
-<wire x1="101.6" y1="124.46" x2="99.822" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="C7" gate="G$1" pin="P$1"/>
@@ -3278,6 +3342,30 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <label x="12.7" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="R13" gate="G$1" pin="P$1"/>
+<pinref part="IC1" gate="G$1" pin="RDEAD"/>
+<wire x1="99.822" y1="124.46" x2="101.6" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="R28" gate="G$1" pin="RIGHT"/>
+<pinref part="R13" gate="G$1" pin="P$2"/>
+<wire x1="88.9" y1="124.46" x2="89.662" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
