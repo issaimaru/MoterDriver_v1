@@ -2094,16 +2094,11 @@ In this library the device names are the same as the pin names of the symbols, t
 →と思ったがノイズを産む可能性があるためできる
 だけソースと繋げる</text>
 <text x="141.732" y="92.202" size="1.778" layer="95">逆電圧防止</text>
-<text x="152.654" y="110.49" size="1.778" layer="95">ブートストラップ→一般式912/13.75[nF]
-0.066[uF]近くにする→0.1[uF]に訂正</text>
 <text x="68.58" y="99.06" size="1.778" layer="95">パスコンくん</text>
 <text x="58.42" y="116.84" size="1.016" layer="95">プルアップ抵抗(RESETをGNDに接続するとRESET)</text>
 <text x="114.554" y="65.278" size="1.778" layer="95">V5</text>
 <text x="140.208" y="64.77" size="1.778" layer="95">V5</text>
 <text x="73.66" y="220.98" size="1.778" layer="95">正転</text>
-<text x="177.546" y="115.57" size="1.016" layer="95">充電時間
-MD動作中→0.46[us] 訂正後 0.6[us]
-電源投入時→9.1[us] 訂正後 12[us]</text>
 <text x="93.98" y="132.08" size="1.778" layer="95">0.180[us]</text>
 <text x="269.24" y="170.942" size="1.778" layer="91">+put</text>
 <text x="307.34" y="170.942" size="1.778" layer="91">-put</text>
@@ -3324,7 +3319,7 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <pinref part="TR3" gate="G$1" pin="B"/>
 <pinref part="R9" gate="G$1" pin="LEFT"/>
 <wire x1="129.54" y1="217.678" x2="129.54" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="213.36" x2="129.54" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="213.36" x2="129.54" y2="205.74" width="0.1524" layer="91"/>
 <junction x="129.54" y="213.36"/>
 <wire x1="155.956" y1="213.36" x2="129.54" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="213.36" x2="90.424" y2="213.36" width="0.1524" layer="91"/>
@@ -3334,6 +3329,8 @@ MD動作中→0.46[us] 訂正後 0.6[us]
 <wire x1="115.824" y1="203.2" x2="129.54" y2="203.2" width="0.1524" layer="91"/>
 <junction x="129.54" y="203.2"/>
 <label x="177.8" y="203.2" size="1.778" layer="95"/>
+<wire x1="129.54" y1="205.74" x2="129.54" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="203.2" x2="182.88" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SW4" gate="G$1" pin="C"/>
