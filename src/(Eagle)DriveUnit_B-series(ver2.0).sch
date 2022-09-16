@@ -2151,7 +2151,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="116.84" y="177.8" size="1.778" layer="97">INPUT</text>
 <text x="22.86" y="144.78" size="1.778" layer="97">SM/LAP</text>
 <text x="22.86" y="119.38" size="1.778" layer="97">Reset</text>
-<text x="70.358" y="122.682" size="0.762" layer="97" rot="R90">プルアップ抵抗は適当</text>
 <wire x1="63.5" y1="7.62" x2="190.5" y2="7.62" width="0.1524" layer="97"/>
 <text x="170.18" y="220.98" size="1.778" layer="95">逆転</text>
 </plain>
@@ -2537,15 +2536,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="IC1" gate="G$1" pin="PHASE"/>
 <wire x1="101.6" y1="104.14" x2="96.52" y2="104.14" width="0.1524" layer="91"/>
 <label x="91.694" y="103.378" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R1" gate="G$1" pin="LEFT"/>
-<wire x1="101.6" y1="217.424" x2="101.6" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="155.956" y1="210.82" x2="101.6" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="D6" gate="G$1" pin="A"/>
-<pinref part="D2" gate="G$1" pin="A"/>
-<wire x1="101.6" y1="210.82" x2="101.6" y2="203.454" width="0.1524" layer="91"/>
-<junction x="101.6" y="210.82"/>
 </segment>
 <segment>
 <pinref part="D3" gate="G$1" pin="C"/>
@@ -3350,6 +3340,17 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="R28" gate="G$1" pin="RIGHT"/>
 <pinref part="R13" gate="G$1" pin="P$2"/>
 <wire x1="88.9" y1="124.46" x2="89.662" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="D2" gate="G$1" pin="A"/>
+<pinref part="R1" gate="G$1" pin="LEFT"/>
+<wire x1="101.6" y1="203.454" x2="101.6" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="D6" gate="G$1" pin="A"/>
+<wire x1="101.6" y1="210.82" x2="101.6" y2="217.424" width="0.1524" layer="91"/>
+<wire x1="155.956" y1="210.82" x2="101.6" y2="210.82" width="0.1524" layer="91"/>
+<junction x="101.6" y="210.82"/>
 </segment>
 </net>
 </nets>
