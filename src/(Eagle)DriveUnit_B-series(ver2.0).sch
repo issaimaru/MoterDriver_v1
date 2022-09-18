@@ -1894,79 +1894,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </deviceset>
 </devicesets>
 </library>
-<library name="GF063P B104K">
-<packages>
-<package name="GF063PB104K">
-<wire x1="0.18284375" y1="0" x2="1.27" y2="0" width="0.1" layer="21"/>
-<wire x1="1.27" y1="0" x2="5.842" y2="0" width="0.1" layer="21"/>
-<wire x1="5.842" y1="0" x2="6.9" y2="0" width="0.1" layer="21"/>
-<wire x1="6.9" y1="0" x2="7.1" y2="0.2" width="0.1" layer="21" curve="90"/>
-<wire x1="7.1" y1="0.2" x2="7.1" y2="7" width="0.1" layer="21"/>
-<wire x1="0.18284375" y1="0" x2="0.041421875" y2="0.058578125" width="0.1" layer="21" curve="-45"/>
-<wire x1="0.041421875" y1="0.058578125" x2="0" y2="0.158578125" width="0.1" layer="21" curve="-45"/>
-<wire x1="7.1" y1="7" x2="6.9" y2="7.2" width="0.1" layer="21" curve="90"/>
-<wire x1="6.9" y1="7.2" x2="0.2" y2="7.2" width="0.1" layer="21"/>
-<wire x1="0.2" y1="7.2" x2="0" y2="7" width="0.1" layer="21" curve="90"/>
-<circle x="3.55" y="3.8" radius="2" width="0.1" layer="21"/>
-<circle x="3.55" y="3.8" radius="1.8" width="0.1" layer="21"/>
-<wire x1="0" y1="7" x2="0" y2="1.27" width="0.1" layer="21"/>
-<wire x1="0" y1="1.27" x2="0" y2="0.158578125" width="0.1" layer="21"/>
-<wire x1="1.27" y1="0" x2="0" y2="1.27" width="0.1" layer="21"/>
-<wire x1="7.112" y1="1.27" x2="5.842" y2="0" width="0.1" layer="21"/>
-<wire x1="0" y1="1.27" x2="7.112" y2="1.27" width="0.1" layer="21"/>
-<text x="1.524" y="0.254" size="0.8" layer="21" distance="23">TOCOS</text>
-<rectangle x1="0.9" y1="2.15" x2="1.57" y2="2.49" layer="21" rot="R35"/>
-<rectangle x1="0.7" y1="3.1" x2="1.2" y2="3.4" layer="21" rot="R15"/>
-<rectangle x1="1.2" y1="5.32" x2="1.7" y2="5.62" layer="21" rot="R320"/>
-<rectangle x1="0.69" y1="4.34" x2="1.19" y2="4.64" layer="21" rot="R345"/>
-<rectangle x1="2.1" y1="6.07" x2="2.6" y2="6.37" layer="21" rot="R305"/>
-<rectangle x1="3.25" y1="6.32" x2="3.75" y2="6.62" layer="21" rot="R90"/>
-<wire x1="5.8" y1="7.17" x2="7.07" y2="5.9" width="0.1" layer="21"/>
-<wire x1="1.312" y1="7.15" x2="0.042" y2="5.88" width="0.1" layer="21"/>
-<rectangle x1="5.53" y1="2.15" x2="6.2" y2="2.49" layer="21" rot="R325"/>
-<rectangle x1="5.93" y1="3.1" x2="6.43" y2="3.4" layer="21" rot="R345"/>
-<rectangle x1="5.92" y1="4.34" x2="6.42" y2="4.64" layer="21" rot="R15"/>
-<rectangle x1="5.46" y1="5.32" x2="5.96" y2="5.62" layer="21" rot="R40"/>
-<rectangle x1="4.54" y1="6.07" x2="5.04" y2="6.37" layer="21" rot="R55"/>
-<pad name="RIGHT" x="6.05" y="2.8" drill="1.1" shape="octagon"/>
-<pad name="CENTER" x="3.55" y="5.3" drill="1.1" shape="octagon"/>
-<pad name="LEFT" x="1.05" y="2.8" drill="1.1" shape="octagon"/>
-</package>
-</packages>
-<symbols>
-<symbol name="R-EU">
-<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-0.889" x2="2.54" y2="0.889" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
-<text x="-2.032" y="1.2446" size="0.762" layer="95">&gt;NAME</text>
-<text x="-2.032" y="-2.032" size="0.762" layer="96">&gt;VALUE</text>
-<pin name="RIGHT" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="LEFT" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<wire x1="-2.286" y1="-2.286" x2="2.794" y2="2.794" width="0.254" layer="94"/>
-<wire x1="2.794" y1="2.794" x2="1.524" y2="2.286" width="0.254" layer="94"/>
-<wire x1="2.794" y1="2.794" x2="2.286" y2="1.524" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="GF063PB104K" prefix="R" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="R-EU" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="GF063PB104K">
-<connects>
-<connect gate="G$1" pin="LEFT" pad="LEFT"/>
-<connect gate="G$1" pin="RIGHT" pad="CENTER RIGHT"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2074,7 +2001,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY21" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R28" library="GF063P B104K" deviceset="GF063PB104K" device="" value="100k"/>
 </parts>
 <sheets>
 <sheet>
@@ -2178,8 +2104,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="SUPPLY1" gate="GND" x="88.9" y="93.98" smashed="yes">
 <attribute name="VALUE" x="86.995" y="90.805" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY2" gate="GND" x="78.74" y="120.142" smashed="yes">
-<attribute name="VALUE" x="77.343" y="117.729" size="1.016" layer="96"/>
+<instance part="SUPPLY2" gate="GND" x="83.82" y="120.142" smashed="yes">
+<attribute name="VALUE" x="82.423" y="117.729" size="1.016" layer="96"/>
 </instance>
 <instance part="SUPPLY3" gate="GND" x="91.44" y="129.54" smashed="yes">
 <attribute name="VALUE" x="89.535" y="126.365" size="1.778" layer="96"/>
@@ -2281,7 +2207,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="R22" gate="G$1" x="302.26" y="73.66" smashed="yes" rot="R90"/>
 <instance part="R7" gate="G$1" x="114.3" y="55.88" smashed="yes" rot="R90"/>
 <instance part="R8" gate="G$1" x="139.7" y="55.88" smashed="yes" rot="R90"/>
-<instance part="R13" gate="G$1" x="94.742" y="124.46" smashed="yes"/>
+<instance part="R13" gate="G$1" x="92.202" y="124.46" smashed="yes"/>
 <instance part="R2" gate="G$1" x="91.44" y="139.7" smashed="yes" rot="R90"/>
 <instance part="R14" gate="G$1" x="91.44" y="154.94" smashed="yes" rot="R90"/>
 <instance part="LED4" gate="G$1" x="114.3" y="45.72" smashed="yes">
@@ -2419,10 +2345,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </instance>
 <instance part="SUPPLY21" gate="GND" x="187.96" y="208.28" smashed="yes">
 <attribute name="VALUE" x="186.055" y="205.105" size="1.778" layer="96"/>
-</instance>
-<instance part="R28" gate="G$1" x="83.82" y="124.46" smashed="yes">
-<attribute name="NAME" x="81.788" y="125.7046" size="0.762" layer="95"/>
-<attribute name="VALUE" x="82.804" y="122.428" size="0.762" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -2729,9 +2651,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="60.96" y1="213.36" x2="60.96" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R28" gate="G$1" pin="LEFT"/>
+<pinref part="R13" gate="G$1" pin="P$2"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
-<wire x1="78.74" y1="124.46" x2="78.74" y2="122.682" width="0.1524" layer="91"/>
+<wire x1="87.122" y1="124.46" x2="83.82" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="124.46" x2="83.82" y2="122.682" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -3332,14 +3255,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="R13" gate="G$1" pin="P$1"/>
 <pinref part="IC1" gate="G$1" pin="RDEAD"/>
-<wire x1="99.822" y1="124.46" x2="101.6" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="R28" gate="G$1" pin="RIGHT"/>
-<pinref part="R13" gate="G$1" pin="P$2"/>
-<wire x1="88.9" y1="124.46" x2="89.662" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="97.282" y1="124.46" x2="101.6" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
