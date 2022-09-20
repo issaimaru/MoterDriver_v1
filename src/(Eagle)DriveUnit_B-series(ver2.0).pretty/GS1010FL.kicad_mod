@@ -1,5 +1,5 @@
 (module GS1010FL (layer F.Cu) (tedit 0)
-  (fp_text reference D1 (at 0 0) (layer F.SilkS) hide
+  (fp_text reference D6 (at 0 0) (layer F.SilkS) hide
     (effects (font (size 1.27 1.27) (thickness 0.15)))
   )
   (fp_text value GS1010FL (at 0 0) (layer F.SilkS) hide

@@ -1,5 +1,5 @@
 (module GRM21BC72A105KE01 (layer F.Cu) (tedit 0)
-  (fp_text reference C13 (at -1.100013 -0.800007) (layer F.SilkS)
+  (fp_text reference C13 (at -1.1 -0.8) (layer F.SilkS)
     (effects (font (size 0.19 0.19) (thickness 0.0152)) (justify left bottom))
   )
   (fp_text value GRM21BC72A105KE01 (at 0 0) (layer F.SilkS) hide

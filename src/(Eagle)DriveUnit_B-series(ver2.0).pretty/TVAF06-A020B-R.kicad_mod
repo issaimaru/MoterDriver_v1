@@ -1,5 +1,5 @@
 (module TVAF06-A020B-R (layer F.Cu) (tedit 0)
-  (fp_text reference SW2 (at 0.842 -1.614 -180) (layer F.SilkS)
+  (fp_text reference SW2 (at 0.762 -1.524 -180) (layer F.SilkS)
     (effects (font (size 0.2413 0.2413) (thickness 0.019304)) (justify left bottom))
   )
   (fp_text value TVAF06-A020B-R (at 0 0) (layer F.SilkS) hide

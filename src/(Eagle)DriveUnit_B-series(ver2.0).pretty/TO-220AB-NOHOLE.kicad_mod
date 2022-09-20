@@ -1,6 +1,6 @@
 (module TO-220AB-NOHOLE (layer F.Cu) (tedit 0)
-  (fp_text reference 3813-LB (at 1.75 1.44 -180) (layer F.SilkS)
-    (effects (font (size 0.665 0.665) (thickness 0.0532)) (justify left bottom))
+  (fp_text reference LB (at -1.07 2.78 -180) (layer F.SilkS)
+    (effects (font (size 1.2065 1.2065) (thickness 0.09652)) (justify left bottom))
   )
   (fp_text value IRLB3813NOHOLE (at 0 0) (layer F.SilkS) hide
     (effects (font (size 1.27 1.27) (thickness 0.15)) (justify right top))

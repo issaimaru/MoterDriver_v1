@@ -1,4 +1,3 @@
 (sym_lib_table
-  (lib (name "彼女(仮)_回路図-eagle-import")(type Legacy)(uri "${KIPRJMOD}/彼女(仮)_回路図-eagle-import.lib")(options "")(descr ""))
-  (lib (name "DriveUnit_B-series(ver1.0)-rescue")(type Legacy)(uri "${KIPRJMOD}/DriveUnit_B-series(ver1.0)-rescue.lib")(options "")(descr ""))
+  (lib (name "(Eagle)DriveUnit_B-series(ver2.0)-eagle-import")(type Legacy)(uri "${KIPRJMOD}/(Eagle)DriveUnit_B-series(ver2.0)-eagle-import.lib")(options "")(descr ""))
 )

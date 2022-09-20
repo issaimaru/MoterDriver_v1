@@ -1,6 +1,6 @@
 (module SS-12D00G3 (layer F.Cu) (tedit 0)
-  (fp_text reference SW4 (at -4.191 -1.905 -180) (layer F.SilkS)
-    (effects (font (size 0.4826 0.4826) (thickness 0.038608)) (justify left bottom))
+  (fp_text reference SW4 (at -4.191 -1.905) (layer F.SilkS) hide
+    (effects (font (size 0.4826 0.4826) (thickness 0.04064)) (justify right top))
   )
   (fp_text value SS-12D00G3 (at 0 0) (layer F.SilkS) hide
     (effects (font (size 1.27 1.27) (thickness 0.15)) (justify right top))
