@@ -7,20 +7,20 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.10)-1"
     },
-    "CreationDate":  "2022-07-06T08:21:06+09:00"
+    "CreationDate":  "2022-09-21T12:49:22+09:00"
   },
   "GeneralSpecs":
   {
     "ProjectId":
     {
-      "Name": "DriveUnit_B-series(ver1.0)",
-      "GUID": "44726976-6555-46e6-9974-5f422d736572",
+      "Name": "(KiCad)DriveUnit_B-series(ver2.0)",
+      "GUID": "284b6943-6164-4294-9472-697665556e69",
       "Revision": "rev?"
     },
     "Size":
     {
-      "X": 0.000,
-      "Y": 0.000
+      "X": 65.730,
+      "Y": 51.050
     },
     "LayerNumber": 2,
     "BoardThickness":  1.600
@@ -40,47 +40,47 @@
   "FilesAttributes":
   [
     {
-      "Path":  "DriveUnit_B-series(ver1.0)-Top.gbr",
+      "Path":  "(KiCad)DriveUnit_B-series(ver2.0)-Top.gbr",
       "FileFunction":  "Copper,L1,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "DriveUnit_B-series(ver1.0)-Bottom.gbr",
+      "Path":  "(KiCad)DriveUnit_B-series(ver2.0)-Bottom.gbr",
       "FileFunction":  "Copper,L2,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "DriveUnit_B-series(ver1.0)-F_Paste.gbr",
+      "Path":  "(KiCad)DriveUnit_B-series(ver2.0)-F_Paste.gbr",
       "FileFunction":  "SolderPaste,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "DriveUnit_B-series(ver1.0)-B_Paste.gbr",
+      "Path":  "(KiCad)DriveUnit_B-series(ver2.0)-B_Paste.gbr",
       "FileFunction":  "SolderPaste,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "DriveUnit_B-series(ver1.0)-F_SilkS.gbr",
+      "Path":  "(KiCad)DriveUnit_B-series(ver2.0)-F_SilkS.gbr",
       "FileFunction":  "Legend,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "DriveUnit_B-series(ver1.0)-B_SilkS.gbr",
+      "Path":  "(KiCad)DriveUnit_B-series(ver2.0)-B_SilkS.gbr",
       "FileFunction":  "Legend,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "DriveUnit_B-series(ver1.0)-F_Mask.gbr",
+      "Path":  "(KiCad)DriveUnit_B-series(ver2.0)-F_Mask.gbr",
       "FileFunction":  "SolderMask,Top",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "DriveUnit_B-series(ver1.0)-B_Mask.gbr",
+      "Path":  "(KiCad)DriveUnit_B-series(ver2.0)-B_Mask.gbr",
       "FileFunction":  "SolderMask,Bot",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "DriveUnit_B-series(ver1.0)-Edge_Cuts.gbr",
+      "Path":  "(KiCad)DriveUnit_B-series(ver2.0)-Edge_Cuts.gbr",
       "FileFunction":  "Profile",
       "FilePolarity":  "Positive"
     }
