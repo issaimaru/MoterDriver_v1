@@ -2596,7 +2596,7 @@
   (module "(Eagle)DriveUnit_B-series(ver2.0):RG2012" (layer Bottom) (tedit 0) (tstamp 63298162)
     (at 179.5511 96 180)
     (path /A79F8441)
-    (fp_text reference R17 (at 3.6911 -1.65) (layer B.SilkS)
+    (fp_text reference R17 (at 2.0011 -1.63) (layer B.SilkS)
       (effects (font (size 0.5 0.5) (thickness 0.07)) (justify right bottom mirror))
     )
     (fp_text value RG2012 (at 0 0 180) (layer B.SilkS) hide
