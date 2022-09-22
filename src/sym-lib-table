@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "(Eagle)DriveUnit_B-series(ver2.0)-eagle-import")(type Legacy)(uri "${KIPRJMOD}/(Eagle)DriveUnit_B-series(ver2.0)-eagle-import.lib")(options "")(descr ""))
+)
