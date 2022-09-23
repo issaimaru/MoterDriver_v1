@@ -11,6 +11,7 @@
 
 ## バージョンに対応するドキュメント
 - ver1.0-->[README_v1.md](https://github.com/Issaimaru/MoterDriver_v1/blob/master/README_v1.md)
+- ver2.0-->[README_v2.md](https://github.com/Issaimaru/MoterDriver_v1/blob/master/README_v2.md)
 
 ## 前モータードライバ(野獣)との違い
 野獣がノートパソコンで，DUBがゲーミングパソコンと例えるとわかりやすいと思います．(やや過言かもしれないです...)<br>
