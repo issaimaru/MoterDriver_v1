@@ -50,7 +50,7 @@ ver1.0の共通点が多々あるので所々コピペしますが一応ver1.0�
   
   まずはLAP/SM切り替えスイッチについて説明していきます．
   - LAP/SM切り替えスイッチ
-  ![image](https://user-images.githubusercontent.com/80198387/191911726-11384aca-9bdc-45bb-8d52-744c9ad349c3.png)
+  ![image](https://user-images.githubusercontent.com/80198387/191911726-11384aca-9bdc-45bb-8d52-744c9ad349c3.png)<br>
   このスイッチは名前の通り，LAP方式とSM方式を切り替えることできるスイッチです．<br>
 基板にあるシルクの通り，スライドスイッチを"SM"の文字の方にスライドするとSM方式，"LAP"の文字の方にスライドするとLAP方式となります．<br>
 SM方式を採用する場合にはPWMピンにはPWM信号を流し，DIRピンには回転方向の信号を流してください(下の表参照)<br>
@@ -73,7 +73,7 @@ LAP/SM方式の場合の各ピンの真理値表は以下のようになって�
     安全性や効率の観点から基本的にはSM方式を採用してください．
 
 - 手動・テストボタン
-    ![image](https://user-images.githubusercontent.com/80198387/192487169-db56effd-165f-45c2-8e81-e102f582a79a.png)
+    ![image](https://user-images.githubusercontent.com/80198387/192487169-db56effd-165f-45c2-8e81-e102f582a79a.png)<br>
   
     このボタンを押すことで手動でモーターを動かすことができます．<br>
     モータが駆動しないとき，このモータードライバの問題かその他の問題かを判別したり，機構がちゃんと動くかのテスト等に活用してください．<br>
