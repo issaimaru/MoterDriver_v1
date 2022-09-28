@@ -161,4 +161,42 @@ LAP/SM方式の場合の各ピンの真理値表は以下のようになって�
     $$
     で求められます．<br>
     ここで，V5ピンから出力される電流を小さくするためR2とR14には大きな抵抗値の抵抗を使用することを推奨します．
-</detail>
+</details>
+
+## 使用電子部品，値段
+  部品の値段は頻繁に変動するため記さないことにしましたが，ver1.0と同じ部品をほぼ同じ量使用しているため値段はver1.0より少し高いくらいだと思います．<br>
+  チップ抵抗は特性等あまり重要でないので2012サイズの同じ値の抵抗なら何でも大丈夫ですが，コンデンサはDCバイアス等を考慮しているためここに示されているものと同じものを使用することを強く推奨します．<br>
+
+  |部品番号|部品名称|リンク|個数|
+  |:---------:|:---:|:---:|:---:|
+  |IC1|A3921KLPTR-T|https://www.digikey.jp/en/products/detail/A3921KLPTR-T/620-1523-6-ND/4318336?curr=usd&utm_campaign=buynow&utm_medium=aggregator&utm_source=octopart|1個|
+  |3813-XX|IRLB3813PBF|https://akizukidenshi.com/catalog/g/gI-06270/|4個|
+  |SW1，SW2|TVAF06-A020B-R|https://akizukidenshi.com/catalog/g/gP-14888/|2個|
+  |SW3|THAF01-NC-R|https://akizukidenshi.com/catalog/g/gP-14887/|1個|
+  |SW4|SS-12D00G3|https://akizukidenshi.com/catalog/g/gP-15707/|1個|
+  |TRX|2SC3325|https://akizukidenshi.com/catalog/g/gI-00628/|4個|
+  |TLPX|TLP2366|https://akizukidenshi.com/catalog/g/gI-11342/|2個|
+  |LED1，LED2|SML-E12P8WT86(緑)|https://akizukidenshi.com/catalog/g/gI-11878|2個|
+  |LED3|SML-E12Y8WT86|https://akizukidenshi.com/catalog/g/gI-11880|1個|
+  |LED4，LED5|SML-E12V8WT86|https://akizukidenshi.com/catalog/g/gI-11879|2個|
+  |DX|GS1010FL|https://akizukidenshi.com/catalog/g/gI-06014/|5個|
+  |C1，C2，C3，C4，C5，C7，C8|GCM188L81H104KA57D|https://www.digikey.jp/en/products/detail/murata-electronics/GCM188L81H104KA57D/2591908|7個|
+  |C6|GCM21BR71H474KA55L|https://www.digikey.jp/ja/products/detail/murata-electronics-north-america/GCM21BR71H474KA55L/1641707|1個|
+  |C9|GRT31CC81H225KE01L|https://www.digikey.jp/ja/products/detail/murata-electronics/GRT31CC81H225KE01L/5416844|1個|
+  |C10，C11|35PZJ330M10X9|https://akizukidenshi.com/catalog/g/gP-16867/|2個|
+  |C12|GRM32ER71H106KA12|https://akizukidenshi.com/catalog/g/gP-16113/|1個|
+  |C13|GRM21BC72A105KE01|https://akizukidenshi.com/catalog/g/gP-13699/|1個|
+  |R1，R4，R5，R6，R9，R11，R15，R16，R17，R18，R19，R24，R25|RG2012-N-103-B-T5|https://akizukidenshi.com/catalog/g/gR-11797/|13個|
+  |R2|RG2012N-332-W-T1|https://www.digikey.jp/ja/products/detail/susumu/RG2012N-332-W-T1/600888|1個|
+  |R3，R22|RG2012P-681-B-T5|https://www.digikey.jp/ja/products/detail/susumu/RG2012P-681-B-T5/1266877|2個|
+  |R7，R8，R26，R27|RG2012N-201-W-T1|https://www.digikey.jp/ja/products/detail/susumu/RG2012N-201-W-T1/600671|4個|
+  |R10，R12，R20，R21|RG2012Q-100-D-T5|https://jp.rs-online.com/web/p/surface-mount-resistors/6379813|4個|
+  |R13|RG2012P-302-B-T5|https://www.digikey.jp/ja/products/detail/susumu/RG2012P-302-B-T5/1240739|1個|
+  |R14|RG2012N-222-W-T1|https://www.digikey.jp/en/products/detail/susumu/RG2012N-222-W-T1/600696|1個|
+
+<details><summary>回路図(Eagle)</summary>
+
+  ![DriveUnit_ver2 0](https://user-images.githubusercontent.com/80198387/192726514-a8a08fc6-c1b1-49f9-ad89-fda65d5d251a.png)
+
+    
+</details>
