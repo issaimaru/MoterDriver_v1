@@ -153,5 +153,3 @@ A3921のデータシートから取ってきたものですが，各FFピンの�
 1. コマンドプロンプトを立ち上げます．
 1. `cd ”ダウンロード先フォルダの絶対パス” `<br>
 1. `git clone https://github.com/Issaimaru/MoterDriver_v1.git`<br>
-
-以降のページは，実験後に更新します．
